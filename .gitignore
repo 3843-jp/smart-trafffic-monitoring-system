@@ -31,10 +31,6 @@ MANIFEST
 *.manifest
 *.spec
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
-
 # Unit test / coverage reports
 htmlcov/
 .tox/
@@ -122,23 +118,43 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+# Video files (large)
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.flv
+
+# Output files
+output*.avi
+output*.mp4
+processed_*.mp4
+
+# Model weights (large, downloaded at runtime)
+weights/
+*.pt
+runs/
+
+# Temporary files
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+
 # IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-
-# Project specific
-*.avi
-*.mp4
-*.mov
-*.mkv
-output_*.avi
-weights/
-videos/
-data/
+.project
+.pydevproject
+.settings/
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml
+.streamlit/cache/
